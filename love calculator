@@ -1,0 +1,20 @@
+Step 1: Import the random module
+Step 2: Define the function
+Step 3: Print welcome message
+Step 4: Get user input
+Step 5: Generate random love score
+Step 6: Display the result
+Step 7: Call the function
+
+CODE FOR LOVE_CALCULATOR
+import random
+def love_calculate():  Step 2: Define the function
+  print("welcome to love calculator") 
+  name1 = input("enter the first name")
+  name2 = input("enter the second name")
+
+  love_score = random.randint(1,100)
+
+  print(f"the percentage of love between {name1} and {name2} is {love_score}%")
+
+love_calculate()
