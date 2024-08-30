@@ -1,0 +1,15 @@
+# expense tracker app were we use linear search and binary search
+
+transactions = [
+{"date": "2024-08-01", "amount": 50.0, "description": "Groceries"},
+{"date": "2024-08-02", "amount": 20.0, "description": "Bus fare"},
+{"date": "2024-08-03", "amount": 100.0, "description": "Electricity bill"},
+{"date": "2024-08-04", "amount": 200.0, "description": "New shoes"},
+]
+#linear search for Transaction by date
+def search_by_date(transactions,targate_date):
+  for transaction in transactions:
+    if transaction["date"] == targate_date:
+      return transaction
+  return "transaction not found"
+print(search_by_date(transactions,"2024-08-02"))
