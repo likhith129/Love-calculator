@@ -1,0 +1,17 @@
+Binary search:it is a more efficient algorithm than linear search because it has a complexity of O(logn) unlikelinear seach which has complaxity O(n)in binary search it repeatedly divides search the searching interval in half if
+the tagrget value is less than midpoint we go to the left side if it is more than the midpoint we go to the right andfind for the target value
+
+
+def bin_search(arr,target):
+  left = 0
+  right = len(arr) - 1
+  while left <= right:
+    mid = (left+right) // 2
+    if arr[mid] == target:
+      return mid
+    elif arr[mid] < target:
+      left = mid
+    else:right = mid - 1
+  return -1
+numbers = [10,20,30,40,50]
+print(bin_search(numbers,40))
